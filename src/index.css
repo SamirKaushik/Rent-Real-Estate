@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bg: rgb(254, 248, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  font-family: sans-serif;
+  transition: all 0.5s;
+  background-color: var(--bg);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 1px 2px grey;
+  padding: 10px 0px;
+}
+
+.leftNav {
+  padding: 10px 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.rightNav {
+  padding: 10px 20px;
+}
+
+#login, #signup {
+  margin-right: 5px;
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+
+#submit {
+  border-radius: 6px;
+  padding: 4px 12px;
+}
+
+select{
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+  padding: 4px 12px;
+  color: purple;
+}
+
+#login {
+  border: purple solid 1px;
+  color: purple;
+}
+
+#login:hover {
+  background-color: purple;
+  color: var(--bg);
+}
+
+#signup, #submit {
+  border: 1px solid purple;
+  background-color: purple;
+  color: var(--bg);
+}
+
+#login:hover {
+  background-color: purple;
+  color: var(--bg);
+}
+
+#mainbody {
+  margin: 30px auto;
+  width: 70%;
+}
+
+#searchhead {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Century Gothic';
+}
+
+#textsearch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#searchbar {
+  border-radius: 5px;
+  border: 1.5px solid gray;
+  box-shadow: 0px 0px 3px gray;
+  padding: 5px;
+  background-color: white;
+  margin:5px 0px;
+}
+
+#filters {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding:20px;
+  margin-top: 20px;
+}
+#filters div span{
+  padding:0px 10px;
+  color: grey;
+  font-weight: 600;
+  background-color: inherit;
+}
+#filters div:first-child,#filters div:nth-child(2){
+  background-color: white;
+  border-right: 2px gray solid;
+  padding:0px 10px;
+}
+#filters div:nth-child(3){
+  background-color: white;
+  padding:0px 10px;
+}
+select{
+  width: 0px;
+  outline: none;
+  border-radius: 0px 100px 100px 0;
+}
+select:hover{
+  color: white;
+  background-color: purple;
 }

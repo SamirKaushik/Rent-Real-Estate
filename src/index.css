@@ -1,5 +1,6 @@
 :root {
   --bg: rgb(254, 248, 255);
+  --col:rgb(202, 27, 202);
 }
 
 button {
@@ -48,27 +49,27 @@ select{
   background-color: white;
   border-radius: 6px;
   padding: 4px 12px;
-  color: purple;
+  color: var(--col);
 }
 
 #login {
-  border: purple solid 1px;
-  color: purple;
+  border: var(--col) solid 1px;
+  color: var(--col);
 }
 
 #login:hover {
-  background-color: purple;
+  background-color: var(--col);
   color: var(--bg);
 }
 
 #signup, #submit {
-  border: 1px solid purple;
-  background-color: purple;
+  border: 1px solid var(--col);
+  background-color: var(--col);
   color: var(--bg);
 }
 
 #login:hover {
-  background-color: purple;
+  background-color: var(--col);
   color: var(--bg);
 }
 
@@ -128,18 +129,56 @@ select{
 }
 select:hover{
   color: white;
-  background-color: purple;
+  background-color: var(--col);
 }
+.image{
+  border-radius: 10px 10px 0 0;
+  height: 40%;
+}
+.description{
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
 .image img{
   width: 100%;
-  height: 50%;
+  height: 100%;
+  border-radius: 10px 10px 0 0;
 }
 .property{
-  width:150px;
-  margin:20px;
+  width:200px;
+  height: 260px;
+  margin:15px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px grey;
 }
 .houses{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.price,.title,.address{
+padding: 4px 8px;
+border-radius: 10px;
+}
+.price span:nth-child(1){
+  color: var(--col);
+  font-weight: 600;
+}
+.price span:nth-child(2){
+  color: grey;
+}
+.title{
+  font-weight: 600;
+}
+.address{
+  color: grey;
+  font-size: 12px;
+}
+.closed{
+  padding: 4px 8px 8px 8px;
+  border-radius: 10px;
 }

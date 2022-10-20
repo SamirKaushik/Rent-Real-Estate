@@ -1,4 +1,5 @@
 import React from "react";
+import data from "./data";
 const SearchFilter = () => {
     return (
         <div id="mainbody">
@@ -10,7 +11,6 @@ const SearchFilter = () => {
                 <div>
                     <span>State</span>
                     <select name="state" id="state">
-                        <option value="a">asdfghjkl</option>
                     </select>
                 </div>
                 <div>

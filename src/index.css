@@ -130,3 +130,16 @@ select:hover{
   color: white;
   background-color: purple;
 }
+.image img{
+  width: 100%;
+  height: 50%;
+}
+.property{
+  width:150px;
+  margin:20px;
+}
+.houses{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

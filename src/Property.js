@@ -1,5 +1,5 @@
 import React from "react";
-const Property = ({data}) => {
+const Property = ({data,key}) => {
     return (
     <div className="property">
         <div className="image"><img src={data.imageUrls[0]} alt={data.title} /></div>

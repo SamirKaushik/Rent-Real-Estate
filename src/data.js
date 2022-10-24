@@ -783,7 +783,7 @@ const data=
     "plusCode": "V6QJ+HJ Dallas, Texas",
     "website": "http://www.readyrealestate.com/",
     "phone": "(866) 557-3239",
-    "temporarilyClosed": false,
+    "temporarilyClosed": true,
     "location": {
       "lat": 32.888978,
       "lng": -96.7683811
@@ -1111,7 +1111,7 @@ const data=
     "plusCode": "G9V5+MV Waterville, Maine",
     "website": "https://www.surette-realestate.com/",
     "phone": "(207) 873-5634",
-    "temporarilyClosed": false,
+    "temporarilyClosed": true,
     "location": {
       "lat": 44.5442288,
       "lng": -69.6402659
@@ -1518,7 +1518,7 @@ const data=
     "plusCode": "WRRP+3Q McLean, Virginia",
     "website": "http://www.dcareahomes.com/contact.html",
     "phone": "(703) 967-1600",
-    "temporarilyClosed": false,
+    "temporarilyClosed": true,
     "location": {
       "lat": 38.9401978,
       "lng": -77.1630307

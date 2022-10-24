@@ -68,11 +68,6 @@ select{
   color: var(--bg);
 }
 
-#login:hover {
-  background-color: var(--col);
-  color: var(--bg);
-}
-
 #mainbody {
   margin: 30px auto;
   width: 70%;
@@ -113,6 +108,9 @@ select{
   font-weight: 600;
   background-color: inherit;
 }
+#selectedfilters span{
+  background-color: inherit;
+}
 #filters div:first-child,#filters div:nth-child(2){
   background-color: white;
   border-right: 2px gray solid;
@@ -128,8 +126,7 @@ select{
   border-radius: 0px 100px 100px 0;
 }
 select:hover{
-  color: white;
-  background-color: var(--col);
+  cursor: pointer;
 }
 .image{
   border-radius: 10px 10px 0 0;
@@ -181,4 +178,11 @@ border-radius: 10px;
 .closed{
   padding: 4px 8px 8px 8px;
   border-radius: 10px;
+}
+#selectedfilters{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding:10px;
+  margin-top: 10px; 
 }

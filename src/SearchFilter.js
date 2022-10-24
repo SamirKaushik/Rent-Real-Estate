@@ -39,7 +39,7 @@ const SearchFilter = ({filterVal,filter}) => {
                     </select>
                 </div>
                 <div>
-                <span>Type</span>
+                <span>Category</span>
                     <select name="type" id="type">
                     {Array.from(types).map((type)=>{
                             return <option value={type}>{type}</option>

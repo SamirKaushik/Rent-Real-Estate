@@ -30,7 +30,7 @@ const SearchFilter = ({filterVal,filter,search}) => {
                 <div>
                     <span>State</span>
                     <select name="state" id="state">
-                        {Array.from(states).map((state,index)=>{
+                        {Array.from(states).sort().map((state,index)=>{
                             return <option value={state} key={index}>{state}</option>
                         })}
                     </select>
@@ -38,7 +38,7 @@ const SearchFilter = ({filterVal,filter,search}) => {
                 <div>
                 <span>City</span>
                     <select name="city" id="city">
-                    {Array.from(cities).map((city)=>{
+                    {Array.from(cities).sort().map((city)=>{
                             return <option value={city}>{city}</option>
                         })}
                     </select>
@@ -46,7 +46,7 @@ const SearchFilter = ({filterVal,filter,search}) => {
                 <div>
                 <span>Category</span>
                     <select name="type" id="type">
-                    {Array.from(types).map((type)=>{
+                    {Array.from(types).sort().map((type)=>{
                             return <option value={type}>{type}</option>
                         })}
                     </select>

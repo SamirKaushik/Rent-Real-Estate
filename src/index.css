@@ -189,3 +189,54 @@ border-radius: 10px;
   padding:10px;
   margin-top: 5px; 
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#footer {
+  background-color: var(--col);
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+#content-wrap {
+  padding-bottom: 88px;
+}
+
+#footer * {
+  background-color: var(--col);
+}
+
+#developer {
+  color: var(--bg);
+  align-items: center;
+  font-weight: 400;
+  font-size: 20px;
+  text-shadow:1px 1px purple;
+}
+
+#about-me {
+  color: var(--bg);
+  margin-top: 10px;
+}
+
+#about-me a {
+  color: var(--bg);
+  text-decoration: none;
+}
+
+#about-me a:hover {
+  color: var(--bg);
+  text-shadow:1px 1px purple;
+}
+
+.active {
+  color: var(--bg) !important;
+  background-color: var(--bg);
+}

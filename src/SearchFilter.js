@@ -1,6 +1,6 @@
 import React from "react";
 import data from "./data";
-const SearchFilter = ({filterVal,filter}) => {
+const SearchFilter = ({filterVal,filter,search}) => {
     const states=new Set(); states.add("All");
     const cities=new Set(); cities.add("All");
     const types=new Set(); types.add("All");
@@ -15,6 +15,11 @@ const SearchFilter = ({filterVal,filter}) => {
         const val2=document.getElementById("type").value;
         filterVal([val0,val1,val2]);  
     }
+    const searchbar=document.getElementById("searchbar");
+    if(searchbar)
+    searchbar.addEventListener('input',()=>{
+        search(searchbar.value);
+    })
     return (
         <div id="mainbody">
             <div id="textsearch">

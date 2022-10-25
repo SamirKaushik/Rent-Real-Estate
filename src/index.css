@@ -98,27 +98,30 @@ select{
 #filters {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: white;
-  padding:20px;
-  margin-top: 20px;
+  padding:10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
 #filters div span{
-  padding:0px 10px;
   color: grey;
   font-weight: 600;
   background-color: inherit;
+  margin: 5px;
+}
+#filters button{
+  margin: 5px;
 }
 #selectedfilters span{
   background-color: inherit;
+  margin: 5px;
 }
 #filters div:first-child,#filters div:nth-child(2){
   background-color: white;
-  border-right: 2px gray solid;
-  padding:0px 10px;
 }
 #filters div:nth-child(3){
   background-color: white;
-  padding:0px 10px;
 }
 select{
   width: 0px;
@@ -188,6 +191,7 @@ border-radius: 10px;
   background-color: white;
   padding:10px;
   margin-top: 5px; 
+  flex-wrap: wrap;
 }
 
 #page-container {

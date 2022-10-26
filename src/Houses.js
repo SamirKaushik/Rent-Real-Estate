@@ -3,7 +3,7 @@ import React from "react";
 const Houses = ({ data }) => {
   return (<div className="houses">
     {data.map(
-      (item) => <Property data={item}/>
+      (item) => <Property data={item} />
     )
     }
   </div>);

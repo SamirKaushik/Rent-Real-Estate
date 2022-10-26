@@ -1,10 +1,16 @@
 @media only screen and (max-width:400px) {
-  #login{ display: none;}
-  #signup{ display: none;}
+  #login {
+    display: none;
+  }
+
+  #signup {
+    display: none;
+  }
 }
+
 :root {
   --bg: rgb(254, 248, 255);
-  --col:rgb(202, 27, 202);
+  --col: rgb(202, 27, 202);
 }
 
 button {
@@ -48,7 +54,7 @@ button {
   padding: 4px 12px;
 }
 
-select{
+select {
   border: none;
   background-color: white;
   border-radius: 6px;
@@ -96,7 +102,7 @@ select{
   box-shadow: 0px 0px 3px gray;
   padding: 5px;
   background-color: white;
-  margin:5px 0px;
+  margin: 5px 0px;
 }
 
 #filters {
@@ -104,42 +110,51 @@ select{
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  padding:10px;
+  padding: 10px;
   margin-top: 15px;
   flex-wrap: wrap;
 }
-#filters div span{
+
+#filters div span {
   color: grey;
   font-weight: 600;
   background-color: inherit;
   margin: 5px;
 }
-#filters button{
+
+#filters button {
   margin: 5px;
 }
-#selectedfilters span{
+
+#selectedfilters span {
   background-color: inherit;
   margin: 5px;
 }
-#filters div:first-child,#filters div:nth-child(2){
+
+#filters div:first-child, #filters div:nth-child(2) {
   background-color: white;
 }
-#filters div:nth-child(3){
+
+#filters div:nth-child(3) {
   background-color: white;
 }
-select{
+
+select {
   width: 0px;
   outline: none;
   border-radius: 0px 100px 100px 0;
 }
-select:hover{
+
+select:hover {
   cursor: pointer;
 }
-.image{
+
+.image {
   border-radius: 10px 10px 0 0;
   height: 40%;
 }
-.description{
+
+.description {
   border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
@@ -147,54 +162,64 @@ select:hover{
   height: 60%;
 }
 
-.image img{
+.image img {
   width: 100%;
   height: 100%;
   border-radius: 10px 10px 0 0;
 }
-.property{
-  width:200px;
+
+.property {
+  width: 200px;
   height: 260px;
-  margin:15px;
+  margin: 15px;
   border-radius: 10px;
   box-shadow: 0 0 2.5px grey;
 }
-.property:hover{
+
+.property:hover {
   box-shadow: 0 0 6px grey;
 }
-.houses{
+
+.houses {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.price,.title,.address{
-padding: 4px 8px;
-border-radius: 10px;
+
+.price, .title, .address {
+  padding: 4px 8px;
+  border-radius: 10px;
 }
-.price span:nth-child(1){
+
+.price span:nth-child(1) {
   color: var(--col);
   font-weight: 600;
 }
-.price span:nth-child(2){
+
+.price span:nth-child(2) {
   color: grey;
 }
-.title{
+
+.title {
   font-weight: 600;
 }
-.address{
+
+.address {
   color: grey;
   font-size: 12px;
 }
-.closed{
+
+.closed {
   padding: 4px 8px 8px 8px;
   border-radius: 10px;
 }
-#selectedfilters{
+
+#selectedfilters {
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding:10px;
-  margin-top: 5px; 
+  padding: 10px;
+  margin-top: 5px;
   flex-wrap: wrap;
 }
 
@@ -226,7 +251,7 @@ border-radius: 10px;
   align-items: center;
   font-weight: 400;
   font-size: 20px;
-  text-shadow:1px 1px purple;
+  text-shadow: 1px 1px purple;
 }
 
 #about-me {
@@ -241,7 +266,7 @@ border-radius: 10px;
 
 #about-me a:hover {
   color: var(--bg);
-  text-shadow:1px 1px purple;
+  text-shadow: 1px 1px purple;
 }
 
 .active {

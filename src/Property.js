@@ -5,7 +5,7 @@ const Property = ({ data, key }) => {
             <div className="image"><img src={data.imageUrls[0]} alt={data.title} /></div>
             <div className="description">
                 <div className="price">
-                    <span>${Math.ceil(Math.random() * (4000)) + 1000}</span>
+                    <span>${Math.ceil(Math.random() * (500)) + 3500}</span>
                     <span>/month</span>
                 </div>
                 <div className="title">{data.title}</div>
